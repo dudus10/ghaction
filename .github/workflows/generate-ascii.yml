@@ -9,6 +9,9 @@ jobs:
         - name: Checkout Repo
           uses: actions/checkout@v4
 
+        - name: View
+          run: pwd && cat dragon.txt && ls -ltra
+
         - name: Execute script
           run: |
             chmod +x ascii.sh
@@ -22,10 +25,6 @@ jobs:
 
         # - name: Verify file exists and view
         #   run: pwd && grep -i "dragon" dragon.txt && ls -ltra
-
-        - name: View
-          run: pwd && cat dragon.txt && ls -ltra
-                      
 
         - name: List and read file
           run: | 
