@@ -28,6 +28,6 @@ jobs:
 
         - name: List and read file
           run: | 
-            echo "Hi 1st GH action job"
-            ls -ltra 
+            cat dragon.txt
+
 
