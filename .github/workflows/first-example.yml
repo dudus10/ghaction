@@ -1,0 +1,16 @@
+name: First WF
+
+on: push
+
+jobs:
+    first_job:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Welcome message HI!
+          run: echo "Hi 1st GH action job"
+        
+        - name: List files
+          run: ls -ltra
+
+        - name: Read file
+          run: cat README.md
