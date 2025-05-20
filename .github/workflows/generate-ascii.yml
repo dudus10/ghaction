@@ -10,7 +10,7 @@ jobs:
           uses: actions/checkout@v4
 
         - name: View
-          run: pwd && cat dragon.txt && ls -ltra
+          run: pwd && ls -ltra
 
         - name: Execute script
           run: |
