@@ -13,13 +13,13 @@ jobs:
           run: sudo apt-get install cowsay -y
        
         - name: Generate ASCII artwork
-          run: cowsay -f dragon "Run for cover" >> dragon.txt
+          run: pwd && cowsay -f dragon "Run for cover" >> dragon.txt
 
         - name: Verify file exists and view
-          run: grep -i "dragon" dragon.txt
+          run: pwd && grep -i "dragon" dragon.txt && ls -ltra
 
         - name: View
-          run: cat dragon.txt
+          run: pwd && cat dragon.txt && ls -ltra
                       
 
         - name: List and read file
