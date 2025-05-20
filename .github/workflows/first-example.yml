@@ -8,12 +8,12 @@ jobs:
         steps:
         - name: Checkout Repo
           uses: actions/checkout@v4
-          
-        - name: Welcome message HI!
-          run: echo "Hi 1st GH action job"
-        
-        - name: List files
-          run: ls -ltra
 
-        - name: Read file
-          run: cat README.md
+        - name: List and read file
+          run: | 
+            echo "Hi 1st GH action job"
+            ls -ltra 
+            cat README.md
+        
+        - name: Generate ASCII artwork
+          run: cowsay -f dragon "Run for cover" >> dragon.txt
