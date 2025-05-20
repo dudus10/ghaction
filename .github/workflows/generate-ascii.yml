@@ -9,8 +9,13 @@ jobs:
         - name: Checkout Repo
           uses: actions/checkout@v4
 
-        - name: Install Cowsay
-          run: sudo apt-get install cowsay -y
+        - name: Execute script
+          run: |
+            chmod +x ascii.sh
+            ./ascii.sh
+
+        # - name: Install Cowsay
+        #   run: sudo apt-get install cowsay -y
        
         - name: Generate ASCII artwork
           run: pwd && cowsay -f dragon "Run for cover" >> dragon.txt && pwd && ls -ltra
