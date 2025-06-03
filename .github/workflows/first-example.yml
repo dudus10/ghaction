@@ -44,7 +44,7 @@ jobs:
             name: dragon-artifact
 
         - name: List and read file
-          run: pwd && ls -ltra && grep -i "dragon" dragon.txt && ls -ltra
+          run: grep -i "dragon" dragon.txt
           #shell: bash
 
 
