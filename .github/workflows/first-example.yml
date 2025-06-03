@@ -43,8 +43,8 @@ jobs:
           with:
             name: dragon-artifact
 
-        - name: List and read file
-          run: grep -i "dragon" dragon.txt
+        # - name: List and read file
+        #   run: grep -i "dragon" dragon.txt
           #shell: bash
 
 
