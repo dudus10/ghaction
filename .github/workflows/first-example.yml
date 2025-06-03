@@ -45,7 +45,7 @@ jobs:
 
         - name: List and read file
           run: grep -i "dragon" dragon.txt && ls -ltra
-          shell: bash
+          #shell: bash
 
 
     third_job:
