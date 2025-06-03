@@ -34,8 +34,8 @@ jobs:
         needs: first_job
         runs-on: ubuntu-latest
         steps:
-        - name: Sleep for 10 seconds
-          run: sleep 10
+        - name: Sleep for 5 seconds
+          run: pwd && sleep 5
           shell: bash
 
         - name: Download artifact
@@ -44,7 +44,7 @@ jobs:
             name: dragon-artifact
 
         - name: List and read file
-          run: grep -i "dragon" dragon.txt && ls -ltra
+          run: pwd && grep -i "dragon" dragon.txt && ls -ltra
           #shell: bash
 
 
