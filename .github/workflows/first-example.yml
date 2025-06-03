@@ -24,7 +24,8 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         - name: Sleep for 10 seconds
-          uses: sleep 10
+          run: sleep 10
+          shell: bash
 
         - name: List and read file
           run: grep -i "dragon" dragon.txt && ls -ltra
@@ -41,4 +42,4 @@ jobs:
         run: cat dragon.txt && ls -ltra
         shell: bash
 
-        
+
